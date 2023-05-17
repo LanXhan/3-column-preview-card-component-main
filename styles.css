@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin:0%;
+    padding:0;
+
+}
+body{
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    margin-top: 10vh;
+    margin-left: 25vw;
+    font-size: 15px;
+    backdrop-filter:  hsl(0, 0%, 95%);
+    
+}
+    .container{
+        max-width: 60vw;
+        /* border: solid black 1px; */
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        .card{
+            color:  hsl(0, 0%, 95%);
+            padding:10% 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+            .card img{
+                width: 35%;
+            
+            }
+            .card h1{
+                /* padding: 5%; */
+                font-family: 'Big Shoulders Display','Courier New', Courier, monospace;
+                text-transform: uppercase;
+                margin: 10% 0;
+            }
+            .card p{
+                margin-bottom:35% ;
+                font-size: 12px;
+                font-weight: 400;
+
+            }
+            .card a{
+                padding: 8% 5%;
+                background-color:  hsl(0, 0%, 95%);
+                border-radius:20px ;
+                text-align: center;
+                text-decoration: none;
+            }
+            .card.sedan{
+                background-color: hsl(31, 77%, 52%);
+            }
+            .card.sedan a {
+             color: hsl(31, 77%, 52%);
+            }
+            .card.suv{
+                background-color: hsl(184, 100%, 22%);
+            }
+            .card.suv a{
+               color: hsl(184, 100%, 22%);
+            }
+            .card.luxury{
+                background-color:  hsl(179, 100%, 13%);
+            }
+            .card.luxury a{
+                color:  hsl(179, 100%, 13%);
+            }
+@media only  screen and (max-width:375px) {
+    body{
+        margin: 10%;
+    }
+    .container{display: flex;
+    flex-direction: column;
+    
+    }
+}
